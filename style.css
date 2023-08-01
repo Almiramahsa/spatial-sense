@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,800&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100&display=swap");
+
+:root {
+  --primary-color: #d9d9d9;
+  --text-dark: #393f48;
+  --light-dark: #efefef;
+  --white: #ffffff;
+  --max-width: 1000px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 3rem;
+  margin-bottom: 3rem;
+  text-align: end;
+}
+
+.nav__logo {
+  width: fit-content;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-dark);
+}
+
+.nav__icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav_icons span {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.header__container {
+  padding-top: 2rem;
+  position: relative;
+  padding-top: 2rem;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__container img {
+  display: flex;
+  max-width: 1000px;
+  margin-left: auto;
+  border-radius: 5px;
+  z-index: -2;
+}
+
+.header__ribbon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 5px;
+  width: calc(25rem + 100%);
+  padding-right: 2rem;
+}
+
+.header__content {
+  max-width: 450px;
+  padding: 2rem 5rem;
+  color: var(--white);
+}
+
+.header__content p {
+  color: var(--text-dark);
+}
+
+.image__box {
+  position: absolute;
+  bottom: 12.5rem;
+  left: 2rem;
+  padding: 1rem;
+  height: auto;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  box-shadow: #393f48;
+  z-index: 0;
+}
+
+.transforming__container .section__header {
+  max-width: 700px;
+  margin-bottom: 4rem;
+  margin-left: inherit;
+  position: relative;
+}
+.transforming__container .section__header::before {
+  position: absolute;
+  content: "";
+  top: 70%;
+  left: 0;
+  transform: translate(-8rem, 50%);
+  width: 12rem;
+  height: 2px;
+  background-color: var(--text-dark);
+}
+.section__header p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+
+.section__header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.transforming__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.transforming__card {
+  padding: 1rem;
+  display: block;
+  gap: 1rem;
+}
+.transforming__card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+.transforming__card p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-dark);
+}
+.scalingup__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.scalingup__image img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10rem;
+  border-radius: 5px;
+}
+
+.scalingup__description {
+  background-color: var(--light-dark);
+  padding: 6rem;
+  display: flex;
+  align-items: center;
+  height: 30rem;
+  justify-content: center;
+}
+
+blockquote {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 700;
+  padding: 0;
+  line-height: 1.5;
+  max-width: 100%;
+}
+
+.scalingup__author {
+  display: flex;
+  align-items: center;
+}
+
+.scalingup__author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.roadmap_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.roadmap__grid {
+  max-width: 400px;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 50px auto;
+  column-gap: 1.5rem;
+  row-gap: 0.5rem;
+  align-items: center;
+}
+
+.roadmap__grid .number {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  background-color: var(--light-dark);
+}
+
+.roadmap__grid h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  margin: 0.5rem 0;
+}
+.roadmap__grid hr {
+  margin: 0; /* Hapus margin agar garis mendekati nomor */
+  border: none;
+  height: 2px;
+  background-color: var(--text-dark);
+}
+
+.roadmap__grid span:not(.last-child) {
+  height: 2px;
+  width: 100%;
+  background-color: var(--text-light);
+}
+
+.roadmap__image {
+  text-align: right;
+}
+
+.roadmap__image img {
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.footer__bar {
+  padding: 0.5rem;
+  background-color: #393f48;
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--white);
+  border-top: 1px solid var(--white);
+}
+
+@media screen and (max-width: 768px) {
+  .header__banner {
+    max-width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-width 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  }
+}
+@media screen and (max-width: 768px) {
+  .scalingup__container {
+    grid-template-columns: 1fr; /* 1 kolom */
+  }
+  .scalingup__description {
+    padding: 3rem;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__container {
+    background-image: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .roadmap_container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .roadmap__grid {
+    margin-top: 0; /* Hapus margin-top agar tulisan tidak jauh dari gambar */
+  }
+
+  .process__image {
+    flex: 0 0 50%; /* Atur lebar gambar menjadi setengah dari container */
+    text-align: left;
+  }
+
+  .roadmap__content {
+    flex: 0 0 50%; /* Atur lebar konten menjadi setengah dari container */
+  }
+}
